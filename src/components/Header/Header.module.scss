@@ -1,0 +1,60 @@
+@import "../../theme.module.scss";
+
+.headerContainer {
+  background-color: $primary-background-color;
+  padding: 1rem 6.875rem;
+}
+
+.headerContents {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  gap: 0.625rem;
+}
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.title {
+  color: $secondary-color;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 122%;
+  letter-spacing: 0%;
+}
+
+.navbar {
+  display: flex;
+  gap: 2.125rem;
+}
+
+.pageName {
+  font-size: 1rem;
+
+  &:hover {
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}
+
+.getStartedButton {
+  border: 1px solid $secondary-color;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 0.75rem 1.5rem;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
