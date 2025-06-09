@@ -1,0 +1,163 @@
+@import "../../theme.module.scss";
+
+.businessContentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5rem;
+  padding: 7.5rem;
+}
+
+.solutionsContainer {
+  display: flex;
+  gap: 6.25rem;
+}
+
+.solutionsTitle {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 122%;
+  letter-spacing: 0%;
+}
+
+.solutionsDescription {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 122%;
+  letter-spacing: 0%;
+}
+
+.cardsContainer {
+  position: relative;
+}
+
+.firstCard {
+  background-color: $first-card-background-color;
+  border-radius: 1rem;
+  height: 22.25rem;
+  margin-top: 4rem;
+  position: relative;
+  width: 19.875rem;
+}
+
+.secondCard {
+  background-color: $second-card-background-color;
+  border-radius: 1rem;
+  height: 19.375rem;
+  left: 80%;
+  padding-top: 2rem;
+  position: absolute;
+  top: 0;
+  width: 19.875rem;
+}
+
+.thirdCard {
+  background-color: $third-card-background-color;
+  border-radius: 1rem;
+  height: 19.375rem;
+  left: 70%;
+  padding-top: 2rem;
+  position: absolute;
+  top: 50%;
+  width: 19.875rem;
+}
+
+.servicesContainer {
+  display: flex;
+  gap: 6rem;
+  margin-top: 5rem;
+}
+
+.specializationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 21rem;
+}
+
+.specializeTitle {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 122%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.specializationImage {
+  border-radius: 1rem;
+  width: 21rem;
+}
+
+.specializationDescription {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.getQuoteButton {
+  border: none;
+  background-color: $secondary-color;
+  color: $primary-color;
+  font-size: 1.125rem;
+  font-weight: 400;
+  height: 3.125rem;
+  line-height: 160%;
+  letter-spacing: 0%;
+  padding: 0.625rem 1.875rem;
+  text-align: center;
+  width: 9.625rem;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.serviceCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+}
+
+.serviceCard {
+  border: 1px solid $card-border-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 16rem;
+  padding: 1rem 2.25rem;
+  width: 20.6875rem;
+}
+
+.serviceLogo {
+  height: 2.375rem;
+  width: 2.375rem;
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 122%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.serviceDescription {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 160%;
+  letter-spacing: 0%;
+  margin: 0;
+  width: 70%;
+}
+
+.learnMoreText {
+  color: $secondary-color;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+}
