@@ -8,6 +8,11 @@ $second-card-background-color: #a7a7a7;
 $third-card-background-color: #c3c3c3;
 $card-border-color: #0000001a;
 
+$white-board-background-color: #f2feff;
+
+$footer-background-color: #f4f4f4;
+$footer-font-color: #070707;
+
 :export {
   primaryColor: $primary-color;
   secondaryColor: $secondary-color;
@@ -17,4 +22,9 @@ $card-border-color: #0000001a;
   secondCardBackgroundColor: $second-card-background-color;
   thirdCardBackgroundColor: $third-card-background-color;
   cardBorderColor: $card-border-color;
+
+  whiteBoardBackgroundColor: $white-board-background-color;
+
+  footerBackgroundColor: $footer-background-color;
+  footerFontColor: $footer-font-color;
 }
