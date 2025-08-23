@@ -65,7 +65,8 @@
 
 .servicesContainer {
   display: flex;
-  gap: 6rem;
+  flex-direction: column;
+  gap: 1rem;
   margin-top: 5rem;
 }
 
@@ -108,7 +109,6 @@
   letter-spacing: 0%;
   padding: 0.625rem 1.875rem;
   text-align: center;
-  width: 9.625rem;
 
   &:hover {
     background-color: $secondary-color;
@@ -120,7 +120,7 @@
 .serviceCardsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.25rem;
+  gap: 2rem;
 }
 
 .serviceCard {
@@ -165,6 +165,7 @@
 }
 
 .aboutTeam {
+  align-items: center;
   background-color: $secondary-color;
   color: $primary-color;
   display: flex;
@@ -172,10 +173,9 @@
   padding: 6.125rem 6.75rem;
 }
 
-.whiteBoard {
-  background-color: $white-board-background-color;
+.ourTeamImage {
   border-radius: 1rem;
-  height: 23.375rem;
+  height: 20rem;
   width: 31.25rem;
 }
 
@@ -275,7 +275,7 @@
 .meetingSubHeading {
   color: $primary-color;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 700;
   line-height: 160%;
   letter-spacing: 0%;
 }

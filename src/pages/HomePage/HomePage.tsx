@@ -1,15 +1,13 @@
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 import homePageStyles from "./HomePage.module.scss";
-import businessAnalyticsSample from "../../assets/businessAnalyticsSample.svg";
 import strategicPlanningLogo from "../../assets/strategicPlanning.svg";
 import teamBuildingLogo from "../../assets/teamBuilding.svg";
 import partnershipDrivenLogo from "../../assets/partnershipDriven.svg";
-import servicesLogo from "../../assets/servicesOffered.svg";
+import ourTeamLogo from "../../assets/ourTeam.jpg";
 import IbMatrixLogo from "../../assets/ibMatrixLogo.svg";
 
 const HomePage = () => {
@@ -19,37 +17,19 @@ const HomePage = () => {
         <div className={homePageStyles.solutionsContainer}>
           <div>
             <h1 className={homePageStyles.solutionsTitle}>
-              Best Solution for <br /> your business growth
+              Your Strategic <br /> Business Partner
             </h1>
             <p className={homePageStyles.solutionsDescription}>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-              mi..
+              Partner for executive staffing, building growth engine and
+              business consulting
             </p>
-            <button className={homePageStyles.primaryButton}>Know more</button>
-          </div>
-          <div className={homePageStyles.cardsContainer}>
-            <div className={homePageStyles.firstCard}></div>
-            <div className={homePageStyles.secondCard}></div>
-            <div className={homePageStyles.thirdCard}></div>
+            <button className={homePageStyles.primaryButton}>
+              Talk To Our Experts
+            </button>
           </div>
         </div>
         <div className={homePageStyles.servicesContainer}>
-          <div className={homePageStyles.specializationContainer}>
-            <h2 className={homePageStyles.specializeTitle}>
-              We specialize <br /> in.
-            </h2>
-            <img
-              className={homePageStyles.specializationImage}
-              src={businessAnalyticsSample}
-              alt="Business Analytics Sample"
-            />
-            <p className={homePageStyles.specializationDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
-              fringilla, mattis ligula consectetur, ultrices
-            </p>
-            <button className={homePageStyles.primaryButton}>Get Quote</button>
-          </div>
+          <h2>Our Expertise in</h2>
           <div className={homePageStyles.serviceCardsContainer}>
             <div className={homePageStyles.serviceCard}>
               <img
@@ -58,11 +38,10 @@ const HomePage = () => {
                 alt="Strategic Planning"
               />
               <h3 className={homePageStyles.serviceTitle}>
-                Strategic GTM Planning
+                Go-to-Market & Growth Systems
               </h3>
               <div className={homePageStyles.serviceDescription}>
-                Strategic GTM Planning Lorem ipsum dolor sit amet consectetur
-                adipiscing.
+                From GTM Planning to execution - We build for growth.
               </div>
               <div className={homePageStyles.learnMoreText}>Learn More</div>
             </div>
@@ -73,11 +52,10 @@ const HomePage = () => {
                 alt="Team Building"
               />
               <h3 className={homePageStyles.serviceTitle}>
-                Team Building & Consulting
+                Executive Staffing
               </h3>
               <div className={homePageStyles.serviceDescription}>
-                Comprehensive support from assembling top-tier teams to
-                providing expert advisory services.
+                Your partner in finding and closing the right leadership fit.
               </div>
               <div className={homePageStyles.learnMoreText}>Learn More</div>
             </div>
@@ -88,11 +66,10 @@ const HomePage = () => {
                 alt="Partnership Driven Growth"
               />
               <h3 className={homePageStyles.serviceTitle}>
-                Partnership-Driven Growth
+                DAAS-Driven Strategic Consulting
               </h3>
               <div className={homePageStyles.serviceDescription}>
-                Collaborating closely with our clients to streamline processes
-                and maximize opportunities.
+                Turn insights into action for sustainable growth.
               </div>
               <div className={homePageStyles.learnMoreText}>Learn More</div>
             </div>
@@ -100,68 +77,39 @@ const HomePage = () => {
         </div>
       </div>
       <div className={homePageStyles.aboutTeam}>
-        <div className={homePageStyles.whiteBoard}></div>
+        <div>
+          <img
+            className={homePageStyles.ourTeamImage}
+            src={ourTeamLogo}
+            alt="Strategic Planning"
+          />
+        </div>
         <div>
           <div className={homePageStyles.ourTeamHeading}>Our Team</div>
           <div className={homePageStyles.aboutTeamPoint}>
             <CheckCircleIcon className={homePageStyles.checkCircleIcon} />
             <span>
-              Our dynamic team thrives on turning market challenges into growth
-              opportunities.
+              Industry experts, with a proven track record in building
+              leadership teams for growth-focused and enterprised companies
+              delivered a significant impact on organizational success
             </span>
           </div>
           <div className={homePageStyles.aboutTeamPoint}>
             <CheckCircleIcon className={homePageStyles.checkCircleIcon} />
             <span>
-              At IB Matrix, we take a hands-on approach—collaborating closely
-              with clients to implement strategies that exceed functional goals
-              and drive revenue growth.
+              Industry experts who have successfully built growth engines for
+              SNEs and enterprises, driving revenue scaling by 3X and beyond
             </span>
           </div>
           <div className={homePageStyles.aboutTeamPoint}>
             <CheckCircleIcon className={homePageStyles.checkCircleIcon} />
             <span>
-              "Discover how our innovative solutions and dedication to
-              excellence drive your business forward. Welcome to IB Matrix—where
-              your success is our mission.
+              Industry experts specializing in DaaS-driven strategic consulting
+              empower organizations to leverage data as a service, enabling
+              scalable, data-centric growth and transformative business
+              outcomes.
             </span>
           </div>
-        </div>
-      </div>
-      <div className={homePageStyles.servicesOffered}>
-        <div className={homePageStyles.servicesOfferedContainer}>
-          <h2 className={homePageStyles.servicesOfferedTitle}>
-            Services Offered
-          </h2>
-          <div>
-            <div className={homePageStyles.servicesOfferedPoint}>
-              <TaskAltIcon className={homePageStyles.taskAltIcon} />
-              <span>UI/UX audit and design</span>
-            </div>
-            <div className={homePageStyles.servicesOfferedPoint}>
-              <TaskAltIcon className={homePageStyles.taskAltIcon} />
-              <span>Custom Website and app development</span>
-            </div>
-            <div className={homePageStyles.servicesOfferedPoint}>
-              <TaskAltIcon className={homePageStyles.taskAltIcon} />
-              <span>Digital consulting and Solutions</span>
-            </div>
-            <div className={homePageStyles.servicesOfferedPoint}>
-              <TaskAltIcon className={homePageStyles.taskAltIcon} />
-              <span>GTM consulting</span>
-            </div>
-            <div className={homePageStyles.servicesOfferedPoint}>
-              <TaskAltIcon className={homePageStyles.taskAltIcon} />
-              <span>Partnership</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img
-            className={homePageStyles.servicesLogo}
-            src={servicesLogo}
-            alt="Services logo"
-          />
         </div>
       </div>
       <div className={homePageStyles.contactUsContainer}>
@@ -172,7 +120,7 @@ const HomePage = () => {
               with our experts?
             </h2>
             <p className={homePageStyles.meetingSubHeading}>
-              Let's talk Clear. Concise. Compelling ideas for your brand!
+              Let's talk Clear. Concise. Compelling ideas for your business!
             </p>
           </div>
           <button className={homePageStyles.getStartedButton}>

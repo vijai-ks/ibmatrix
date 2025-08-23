@@ -15,11 +15,11 @@ const Header = () => {
         </div>
         <div className={headerStyles.navbar}>
           <div className={headerStyles.pageName}>Home</div>
+          <div className={headerStyles.pageName}>Our Expertise</div>
           <div className={headerStyles.pageName}>About Us</div>
-          <div className={headerStyles.pageName}>Services</div>
           <div className={headerStyles.pageName}>Contact Us</div>
         </div>
-        <button className={headerStyles.getStartedButton}>GET STARTED</button>
+        <button className={headerStyles.getStartedButton}>TALK TO OUR EXPERTS</button>
       </div>
     </div>
   );
