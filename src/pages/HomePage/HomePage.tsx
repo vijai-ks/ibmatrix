@@ -9,26 +9,25 @@ import teamBuildingLogo from "../../assets/teamBuilding.svg";
 import partnershipDrivenLogo from "../../assets/partnershipDriven.svg";
 import ourTeamLogo from "../../assets/ourTeam.jpg";
 import IbMatrixLogo from "../../assets/ibMatrixLogo.svg";
+import AboutPage from "../AboutPage/AboutPage";
 
 const HomePage = () => {
   return (
-    <div>
+    <div id="home">
       <div className={homePageStyles.homePageContainer}>
         <div className={homePageStyles.solutionsContainer}>
-          <div>
-            <h1 className={homePageStyles.solutionsTitle}>
-              Your Strategic <br /> Business Partner
-            </h1>
-            <p className={homePageStyles.solutionsDescription}>
-              Partner for executive staffing, building growth engine and
-              business consulting
-            </p>
-            <button className={homePageStyles.primaryButton}>
-              Talk To Our Experts
-            </button>
+          <div className={homePageStyles.mainTitle}>
+            Your Strategic Business Partner for
           </div>
+          <p className={homePageStyles.solutionsDescription}>
+            Partner for executive staffing, building growth engine and business
+            consulting
+          </p>
+          <button className={homePageStyles.primaryButton}>
+            Talk To Our Experts
+          </button>
         </div>
-        <div className={homePageStyles.servicesContainer}>
+        <div className={homePageStyles.servicesContainer} id="our-expertise">
           <h2>Our Expertise in</h2>
           <div className={homePageStyles.serviceCardsContainer}>
             <div className={homePageStyles.serviceCard}>
@@ -76,6 +75,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <AboutPage />
       <div className={homePageStyles.aboutTeam}>
         <div>
           <img
@@ -112,7 +112,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-      <div className={homePageStyles.contactUsContainer}>
+      <div className={homePageStyles.contactUsContainer} id="contact-us">
         <div className={homePageStyles.contactUs}>
           <div>
             <h2 className={homePageStyles.meetingWithUsHeading}>

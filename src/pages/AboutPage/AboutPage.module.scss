@@ -1,0 +1,35 @@
+.aboutPage {
+  background-color: #fcfcfa;
+  padding: 2.5rem 7.5rem;
+}
+
+.visionMissionContainer {
+  align-items: center;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.headingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headings {
+  margin: 0;
+  padding: 0;
+}
+
+.visionMissionStatements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.aboutUsLogo {
+  height: 20rem;
+  width: 35rem;
+}
