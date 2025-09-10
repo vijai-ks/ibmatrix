@@ -10,19 +10,19 @@ import partnershipDrivenLogo from "../../assets/partnershipDriven.svg";
 import ourTeamLogo from "../../assets/ourTeam.jpg";
 import IbMatrixLogo from "../../assets/ibMatrixLogo.svg";
 import AboutPage from "../AboutPage/AboutPage";
+import TextLooper from "../../components/TextLooper/TextLooper";
 
 const HomePage = () => {
   return (
-    <div id="home">
+    <div id="home" className={homePageStyles.homePage}>
       <div className={homePageStyles.homePageContainer}>
         <div className={homePageStyles.solutionsContainer}>
           <div className={homePageStyles.mainTitle}>
             Your Strategic Business Partner for
           </div>
-          <p className={homePageStyles.solutionsDescription}>
-            Partner for executive staffing, building growth engine and business
-            consulting
-          </p>
+          <div className={homePageStyles.textLooper}>
+            <TextLooper />
+          </div>
           <button className={homePageStyles.primaryButton}>
             Talk To Our Experts
           </button>

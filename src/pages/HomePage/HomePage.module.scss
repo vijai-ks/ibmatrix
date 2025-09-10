@@ -7,23 +7,32 @@
   padding: 7.5rem;
 }
 
+.homePage,
+.servicesContainer {
+  scroll-margin-top: 7rem;
+}
+
 .solutionsContainer {
+  align-items: center;
   display: flex;
-  gap: 6.25rem;
-  justify-content: space-between;
-  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.textLooper {
+  margin: 1rem 0;
+}
+
+.mainTitle {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.215rem;
 }
 
 .solutionsTitle {
   font-size: 3.125rem;
   font-weight: 600;
-  line-height: 122%;
-  letter-spacing: 0%;
-}
-
-.solutionsDescription {
-  font-size: 1.125rem;
-  font-weight: 300;
   line-height: 122%;
   letter-spacing: 0%;
 }
@@ -120,7 +129,7 @@
 .serviceCardsContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .serviceCard {
