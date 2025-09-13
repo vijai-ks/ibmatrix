@@ -1,5 +1,5 @@
 .aboutPage {
-  background-color: #fcfcfa;
+  background: var(--primary-background-color);
   padding: 2.5rem 7.5rem;
   scroll-margin-top: 7rem;
 }
@@ -13,6 +13,7 @@
 }
 
 .headingsContainer {
+  color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
   gap: 2rem;

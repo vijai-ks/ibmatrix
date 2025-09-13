@@ -1,30 +1,57 @@
-$primary-color: #ffffff;
-$secondary-color: #0061ff;
+:root {
+  --primary-white: #ffffff;
 
-$primary-background-color: #f2f2f2;
+  --primary-color: #ffffff;
+  --secondary-color: #0061ff;
 
-$first-card-background-color: #d9d9d9;
-$second-card-background-color: #a7a7a7;
-$third-card-background-color: #c3c3c3;
-$card-border-color: #0000001a;
+  --primary-text-color: #000000;
+  --secondary-text-color: #0061ff;
+  --button-text-color: #ffffff;
 
-$white-board-background-color: #f2feff;
+  --primary-background-color: #fcfcfa;
+  --secondary-background-color: #f2f2f2;
 
-$footer-background-color: #f4f4f4;
-$footer-font-color: #070707;
+  --footer-background-color: #f4f4f4;
+  --footer-font-color: #070707;
+}
 
-:export {
-  primaryColor: $primary-color;
-  secondaryColor: $secondary-color;
-  primaryBackgroundColor: $primary-background-color;
+[data-theme="dark"] {
+  --primary-color: #121212;
+  --secondary-color: #3781ee;
 
-  firstCardBackgroundColor: $first-card-background-color;
-  secondCardBackgroundColor: $second-card-background-color;
-  thirdCardBackgroundColor: $third-card-background-color;
-  cardBorderColor: $card-border-color;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #3781ee;
+  --button-text-color: #ffffff;
 
-  whiteBoardBackgroundColor: $white-board-background-color;
+  --primary-background-color: linear-gradient(
+    135deg,
+    #232526 0%,
+    #283e51 50%,
+    #1a2a6c 100%
+  );
+  --secondary-background-color: #272829;
+  --team-background-color: #181c2b;
 
-  footerBackgroundColor: $footer-background-color;
-  footerFontColor: $footer-font-color;
+  --header-background-color: linear-gradient(90deg, #232526 0%, #3781ee 100%);
+
+  --footer-background-color: linear-gradient(90deg, #1a2a6c 0%, #232526 100%);
+  --footer-font-color: #f1f1f1;
+}
+
+[data-theme="light"] {
+  --primary-color: #ffffff;
+  --secondary-color: #0061ff;
+
+  --primary-text-color: #000000;
+  --secondary-text-color: #0061ff;
+  --button-text-color: #ffffff;
+
+  --primary-background-color: #fcfcfa;
+  --secondary-background-color: #f2f2f2;
+  --team-background-color: #0061ff;
+
+  --header-background-color: #f8f8f8;
+
+  --footer-background-color: #f4f4f4;
+  --footer-font-color: #070707;
 }

@@ -1,7 +1,5 @@
-@use "../../theme.module.scss" as theme;
-
 .headerContainer {
-  background-color: theme.$primary-background-color;
+  background: var(--header-background-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 1rem 6.875rem;
   position: sticky;
@@ -19,6 +17,7 @@
   align-items: center;
   display: flex;
   gap: 0.625rem;
+  text-decoration: none;
 }
 
 .logo {
@@ -26,8 +25,44 @@
   width: 3rem;
 }
 
+.actionsContainer {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.themeIconContainer {
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  overflow: hidden;
+  width: 2.5rem;
+
+  .iconWrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sunIcon {
+    color: red;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .moonIcon {
+    color: yellow;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+}
+
 .title {
-  color: theme.$secondary-color;
+  color: var(--secondary-text-color);
   font-size: 2rem;
   font-weight: 600;
   line-height: 122%;
@@ -40,24 +75,24 @@
 }
 
 .pageName {
-  color: inherit;
+  color: var(--primary-text-color);
   font-size: 1rem;
   text-decoration: none;
 
   &:hover {
-    color: theme.$secondary-color;
+    color: var(--secondary-text-color);
     cursor: pointer;
   }
 }
 
 .active {
-  color: theme.$secondary-color;
+  color: var(--secondary-text-color);
 }
 
 .getStartedButton {
-  background-color: theme.$secondary-color;
+  background-color: var(--secondary-color);
   border: none;
-  color: theme.$primary-color;
+  color: var(--button-text-color);
   font-size: 1rem;
   font-weight: 500;
   line-height: 100%;
@@ -65,9 +100,9 @@
   padding: 0.75rem 1.5rem;
 
   &:hover {
-    background-color: theme.$primary-color;
-    border: 1px solid theme.$secondary-color;
-    color: theme.$secondary-color;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-text-color);
     cursor: pointer;
   }
 }
