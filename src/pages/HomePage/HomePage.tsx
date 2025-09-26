@@ -11,6 +11,7 @@ import ourTeamLogo from "../../assets/ourTeam.jpg";
 import IbMatrixLogo from "../../assets/ibMatrixLogo.svg";
 import AboutPage from "../AboutPage/AboutPage";
 import TextLooper from "../../components/TextLooper/TextLooper";
+import ScheduleMeetingButton from "../../components/ScheduleMeeting/ScheduleMeetingButton";
 
 const HomePage = () => {
   return (
@@ -23,9 +24,7 @@ const HomePage = () => {
           <div className={homePageStyles.textLooper}>
             <TextLooper />
           </div>
-          <button className={homePageStyles.primaryButton}>
-            Talk To Our Experts
-          </button>
+          <ScheduleMeetingButton buttonText="Talk To Our Experts" />
         </div>
         <div className={homePageStyles.servicesContainer} id="our-expertise">
           <h2>Our Expertise in</h2>
@@ -123,9 +122,7 @@ const HomePage = () => {
               Let's talk Clear. Concise. Compelling ideas for your business!
             </p>
           </div>
-          <button className={homePageStyles.getStartedButton}>
-            Get Started
-          </button>
+          <ScheduleMeetingButton buttonText="Get Started" />
         </div>
       </div>
       <div className={homePageStyles.footerContainer}>

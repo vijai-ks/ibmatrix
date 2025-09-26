@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import clsx from "clsx";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/solid";
@@ -6,42 +6,13 @@ import { AnimatePresence, motion } from "motion/react";
 
 import headerStyles from "./Header.module.scss";
 import IbMatrixLogo from "../../assets/ibMatrixLogo.svg";
-import { type ITheme } from "../../types/common";
-
-const getInitialTheme = (): ITheme => {
-  const stored = localStorage.getItem("theme") as ITheme;
-
-  if (stored) return stored;
-
-  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  return prefersDark ? "dark" : "light";
-};
+import ScheduleMeetingButton from "../ScheduleMeeting/ScheduleMeetingButton";
+import { useTheme } from "../../context/ThemeContext";
 
 const Header = () => {
+  const { theme, setTheme } = useTheme();
+
   const [selectedPage, setSelectedPage] = useState("Home");
-  const [theme, setTheme] = useState<ITheme>(getInitialTheme());
-
-  useEffect(() => {
-    document.querySelector("body")?.setAttribute("data-theme", theme);
-  }, [theme]);
-
-  useEffect(() => {
-    const syncTheme = (e: StorageEvent) => {
-      if (e.key === "theme" && e.newValue) {
-        updateTheme((e.newValue as ITheme) || "light");
-      }
-    };
-
-    window.addEventListener("storage", syncTheme);
-    return () => window.removeEventListener("storage", syncTheme);
-  }, []);
-
-  const updateTheme = (newTheme: ITheme) => {
-    console.log("new theme ", newTheme);
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
 
   return (
     <div className={headerStyles.headerContainer}>
@@ -97,11 +68,9 @@ const Header = () => {
           </a>
         </div>
         <div className={headerStyles.actionsContainer}>
-          <button className={headerStyles.getStartedButton}>
-            TALK TO OUR EXPERTS
-          </button>
+          <ScheduleMeetingButton buttonText="TALK TO OUR EXPERTS" />
           <span
-            onClick={() => updateTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             className={headerStyles.themeIconContainer}
           >
             <AnimatePresence mode="wait" initial={false}>
